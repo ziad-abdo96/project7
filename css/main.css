@@ -1,0 +1,213 @@
+* {
+    border: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    align-items: center;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    
+}
+body {
+    background-color: black;
+}
+
+:root {
+    --text-color: #fff;
+    --bg-color: #000;
+    --main-color: #ffa343;
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+/* header  */
+
+  
+.header-content {
+    height: 120px;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 27px 4%;
+    align-items: center;
+    background-color: rgba(76, 66, 66,.91);
+    transition: all .50s ease;
+    z-index: 1000;
+}
+
+.header-content .logo img {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 120px white;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.header-content .logo img:hover {
+    transform: scale(1.09);
+   
+}
+.header-content ul {
+    display: flex;
+  
+    
+}
+.header-content ul li {
+    font-size: 2rem ;
+    font-weight: 600;
+    margin: 20px;
+    cursor: pointer;
+    transition: all .5s ease;
+   
+}
+
+.header-content ul li:hover {
+    color: #282020;
+    
+}
+
+ .content-right {
+   display: flex;
+   font-size: 21px;
+   font-weight: 600;
+   transition: all .5s ease;
+}
+.content-right p {
+    margin-right: 11px;
+    font-size: 19px;
+    cursor: pointer;
+}
+.icons a i {
+    transition: all .5s ease;
+}
+ .icons a i:hover{
+    color: #282020;
+    transform: translateY(-3px);
+}
+
+.menu {
+    margin: 10px;
+}
+/* home */
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to left , rgba(62, 23, 23, 0.6) , rgba(0,0,0,0.6)), url(../image/pexels-eneida-nieves-1254655.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.home-content {
+    position: relative;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+}
+
+.home-content h1,h2 {
+    width: 100%;
+    text-align: center;
+    font-size: var(--h1-font);
+    
+
+}
+.home-content h1 {
+    
+}
+
+/* =============  
+      type
+*/
+
+.content-type {
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50px,auto));
+    gap: 5rem;
+}
+
+.content-type img {
+    width: 100%;
+    height: 300px;
+    box-shadow: 10px 10px 81px  wheat;
+    border: 2px solid ;
+    transition: all .5s ease;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.content-type h3 {
+    margin: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.content-type h3:hover {
+    color: rgba(99, 85, 85, 0.6);
+}
+.content-type img:hover {
+    transform: scale(1.1);
+    filter: hue-rotate(30deg);
+
+}
+
+ input {
+    background-color: #282020;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid;
+    transition: all .5s ease;
+}
+
+input:hover {
+    background: white;
+    color: #282020;
+    cursor: pointer;
+}
+
+/* bottom */
+.bottom {
+    margin-top: 200px;
+    background-color: #282020;
+    width: 100%;
+    height: 20vh;
+
+}
+.bottom-content {
+
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(290px,auto));
+}
+
+.bottom-content div {
+    
+    margin: 25px;
+    margin-top: 4s0px;
+    line-height: 1.6;
+    
+}
+
+.bottom-content div h3 {
+    font-size: 26px;
+    font-weight:800;
+
+
+}
+
+.bottom-content div h4 {
+    font-size: 17px;
+    font-weight:600;
+}
